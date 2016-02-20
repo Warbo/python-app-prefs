@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-    
+
 #----------------------------------------------------------------------
 # AppPrefs.py
 # Chris Warburton
@@ -19,7 +19,7 @@ class AppPrefs(GladeWindow):
     def __init__(self):
 
         ''' '''
-        
+
         self.init()
 
     #----------------------------------------------------------------------
@@ -51,8 +51,8 @@ class AppPrefs(GladeWindow):
 
     def close_released(self, *args):
         gtk.main_quit()
-    
-        
+
+
     #----------------------------------------------------------------------
 
     def browser_picked(self, *args):
@@ -61,7 +61,7 @@ class AppPrefs(GladeWindow):
             self.widgets['label2'].set_text('Firefox is a lightweight, standards compliant browser which can be enhanced with various downloadable plugins.')
             self.widgets['image1'].set_from_file('Images/Icons/Browser.png')
             self.widgets['image2'].set_from_file('Images/Thumbnails/Firefox.png')
-            
+
         elif chosen == 1:
             self.widgets['label2'].set_text('Epiphany is an easy to use browser which integrates well with the GNOME desktop environment.')
             self.widgets['image1'].set_from_file('Images/Icons/Browser.png')
@@ -69,7 +69,7 @@ class AppPrefs(GladeWindow):
         else:
             self.widgets['label2'].set_text('Gah!')
 
-    
+
 
 
 #----------------------------------------------------------------------
